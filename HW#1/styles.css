@@ -1,0 +1,21 @@
+* {
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+.maincont {
+  margin-top: 15%;
+  font-size: 5vh;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+script {
+  display: -ms-grid;
+  display: grid;
+}
