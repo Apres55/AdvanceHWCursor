@@ -1,8 +1,12 @@
 * {
     font-weight: 200;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(231, 211, 180);
+}
+
+b {
+    font-weight: 600;
+    color: rgb(197, 164, 164);
 }
 
 .maincont {
@@ -10,11 +14,20 @@
     font-size: 5vh;
 }
 
-li {
-    list-style-type: none;
-    text-decoration: none;
-}
-
 script {
     display: grid;
+}
+
+table {
+    border: 2px solid grey;
+    border-radius: 5px;
+    border-spacing: 0px;
+    color: antiquewhite;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    background: linear-gradient(45deg, #474340, #283236);
+}
+
+th {
+    border: 1px solid gray;
 }
