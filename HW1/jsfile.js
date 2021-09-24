@@ -48,7 +48,7 @@ document.writeln(`<ul>
         <th><b>Sum:</b> ${objectsSum} </th>
         <th><b>Round down:</b> ${objIntegersSum} </th>
         <th><b>Rounding in hundreds:</b> ${roundHundredSum} </th>
-        <th><b>BooleanValue:</b> ${oddOrEven === true} </th>
+        <th><b>BooleanValue:</b> ${oddOrEven ? "Even" : "Odd"} </th>
         <th><b>After pay 500:</b> ${delivery} </th>
         <th><b>Average price:</b> ${avarageValue} </th>
         <th><b>Random discount:</b> ${sale} </th>
