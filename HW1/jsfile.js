@@ -1,35 +1,31 @@
-let whiteBread = 15.678;
-let redWine = 123.965;
-let meat = 90.2345;
+const whiteBread = 15.678;
+const redWine = 123.965;
+const meat = 90.2345;
 
-    let maxSum = Math.max(whiteBread,redWine,meat);
+    const maxSum = Math.max(whiteBread,redWine,meat);
 console.log(maxSum);
 
-    let minSum = Math.min(whiteBread,redWine,meat);
+    const minSum = Math.min(whiteBread,redWine,meat);
 console.log(minSum);
 
-    let objectsSum = whiteBread + redWine + meat;
+    const objectsSum = whiteBread + redWine + meat;
 console.log(objectsSum);
 
-    let objIntegersSum = Math.floor(whiteBread) + Math.floor(redWine) + Math.floor(meat);
+    const objIntegersSum = Math.floor(whiteBread) + Math.floor(redWine) + Math.floor(meat);
 console.log(objIntegersSum);
 
-    let roundHundredSum = Math.round(objectsSum / 100) * 100;
+    const roundHundredSum = Math.round(objectsSum / 100) * 100;
 console.log(roundHundredSum);
 
-    let oddOrEven = objIntegersSum % 2 === 0;
+    const oddOrEven = objIntegersSum % 2 === 0;
 console.log(oddOrEven);
 
-if(oddOrEven === true){
-    console.log("even");
-} else {
-    console.log("odd");
-}
+    const totalAmountOfMoney = 500;
 
-    let delivery = 500 - objectsSum;
+    const delivery = totalAmountOfMoney - objectsSum;
 console.log(delivery);
 
-    let avarageValue = (objectsSum / 3).toFixed(2);
+    const avarageValue = (objectsSum / 3).toFixed(2);
 console.log(avarageValue);
 
     const sale = Math.floor(Math.random() * 100);
