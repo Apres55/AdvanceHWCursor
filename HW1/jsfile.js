@@ -29,8 +29,8 @@ if(oddOrEven === true){
     let delivery = 500 - objectsSum;
 console.log(delivery);
 
-    let avarageValue = objectsSum / 3;
-console.log(avarageValue.toFixed(2));
+    let avarageValue = (objectsSum / 3).toFixed(2);
+console.log(avarageValue);
 
     const sale = Math.floor(Math.random() * 100);
 
