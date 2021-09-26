@@ -28,7 +28,10 @@ console.log(delivery);
     const avarageValue = (objectsSum / 3).toFixed(2);
 console.log(avarageValue);
 
-    const sale = Math.floor(Math.random() * 100);
+    const salePercentage = Math.floor(Math.random() * 101);
+
+    const sale = (objectsSum / 100 * salePercentage).toFixed(2);
+    console.log(sale);
 
     const salePrice = (objectsSum - sale).toFixed(2);
 console.log(salePrice);
@@ -47,7 +50,7 @@ document.writeln(`<ul>
         <th><b>BooleanValue:</b> ${oddOrEven ? "Even" : "Odd"} </th>
         <th><b>After pay 500:</b> ${delivery} </th>
         <th><b>Average price:</b> ${avarageValue} </th>
-        <th><b>Random discount:</b> ${sale} </th>
+        <th><b>Random discount:</b> ${salePercentage} </th>
         <th><b>Amount after discount:</b> ${salePrice} </th>
         <th><b>Net profit:</b> ${profit} </th>
 
