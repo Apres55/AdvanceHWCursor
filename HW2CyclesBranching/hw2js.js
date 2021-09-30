@@ -1,5 +1,6 @@
 let N;
 let M;
+let J;
 
 do{
     N = parseInt(prompt("Enter first number"));
@@ -9,11 +10,17 @@ let checkFirstNum = N != NaN ? "Correct Number" : "Not Integer number or it's le
 
 do{
     M = parseInt(prompt("Enter second number"));
-} while (Number.isNaN(M) && M > N);
+} while (Number.isNaN(M));
 
 let checkSecondNum = N != NaN ? "Correct Number" : "Not Integer number or it's letters";
 
 const declineEvenNumbers = confirm(`Skip even numbers?`);
+
+if (N > M) {
+    J = N;
+    N = M;
+    M = J;
+}
 
 let sum = 0;
     for (let i = N; i <= M; i++) {
