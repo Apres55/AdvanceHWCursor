@@ -9,7 +9,7 @@ let checkFirstNum = N != NaN ? "Correct Number" : "Not Integer number or it's le
 
 do{
     M = parseInt(prompt("Enter second number"));
-} while (Number.isNaN(M));
+} while (Number.isNaN(M) && M > N);
 
 let checkSecondNum = N != NaN ? "Correct Number" : "Not Integer number or it's letters";
 
