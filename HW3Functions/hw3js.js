@@ -35,11 +35,16 @@
       return Math.floor(random);
 }
 // // 6
-//   function countLetter(str) {
-//     const lowerCase = str.toLowerCase();
-//     const count = [...lowerCase].filter(l => l === 'а').length;
-//       return count;
-// }
+  const countLetter = function(letter, word) {
+    let result = 0;
+    for (let i = 0; i < word.length; i++) {
+      if (word[i].toLowerCase() === letter.toLowerCase()) {
+        result ++;
+      }
+    }
+    return result;
+}
+
 // 7
   function convertCurrency(value) {
     let valueLowerCase = value.toLowerCase();
@@ -66,12 +71,12 @@ document.writeln(`
   <tr>
     <td>Зарплата после налогового сбора (bruto:1000): <p><b>${salaryAfterTax(1000)}</b></p></td>
     <td>Рандомное число до 9: <p><b>${getRandomNumber(0, 9)}</b></p></td>
-    <td>Обмен USD <==> UAH: <p><b>${convertCurrency(prompt("Введите сумму для обмена со значением `$` или `UAH` вконце", '100$'))}</b></p></td>
+    <td>Количество букв 'а' в слове 'Асталависта': <p><b>${countLetter('а', 'Асталависта')}</b></p></td>
   </tr>
   <tr>
+    <td>Обмен USD <==> UAH: <p><b>${convertCurrency(prompt("Введите сумму для обмена со значением `$` или `UAH`", '100$'))}</b></p></td>
   </tr>
 </table>
 `)
 
-/* <td>Количество букв 'а' в слове 'Асталависта': <p><b>${countLetter('Асталависта')}</b></p></td> */
 
