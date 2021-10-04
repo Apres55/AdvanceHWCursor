@@ -44,16 +44,38 @@ function countLetter(str) {
     const count = [...lowerCase].filter(l => l === 'а').length;
     return count;
 }
+  // 7
+function convertCurrency(value) {
+    const usd = '$';
+    const uah = 'UAH';
+    let result;
+    if (value.includes(usd)) {
+      result = parseInt(value, 10) * 25;
+      return `${result}UAH`;
+    }
+
+    if (value.includes(uah)) {
+      result = parseInt(value, 10) / 25;
+      return `${result}$`;
+    }
+  }
+
 
 document.writeln(`
 <table>
+  <tr>
     <td>Максимальное число (12643): <p><b>${getBiggerNum(12643)}</b></p></td>
     <td>Степень числа (2, 4): <p><b>${pow(2, 4)}</b></p></td>
     <td>Правильный регистр букв имени 'opTimUS': <p><b>${firstUpperLetter('opTimUS')}</b></p></td>
+  </tr>
+  <tr>
     <td>Зарплата после налогового сбора (bruto:1000): <p><b>${salaryAfterTax(1000)}</b></p></td>
-    <td>Рандомное число до 9: <p><b>${getRandomNumber(0, 9)}</b></p>
+    <td>Рандомное число до 9: <p><b>${getRandomNumber(0, 9)}</b></p></td>
     <td>Количество букв 'а' в слове 'Асталависта': <p><b>${countLetter('Асталависта')}</b></p></td>
-    </ul>
+  </tr>
+  <tr>
+    <td>Обмен USD <==> UAH: <p><b>${convertCurrency(prompt("Введите сумму для обмена со значением `$` или `UAH` вконце", '100$'))}</b></p></td>
+  </tr>
 </table>
 `)
 
