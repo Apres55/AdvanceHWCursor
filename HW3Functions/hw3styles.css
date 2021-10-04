@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000000a4;
+  background-color: rgba(117, 111, 102, 0.589);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3em;
+}
+
+b {
+  color: #d4cfcf;
+}
+
+table {
+  border: 2px solid grey;
+  border-radius: 3em;
+  border-spacing: 0px;
+  color: antiquewhite;
+  margin-bottom: 1em;
+  background: linear-gradient(45deg, #474340, #283236);
+}
+
+td {
+  border: 1px solid gray;
+  padding: 2em;
+}
