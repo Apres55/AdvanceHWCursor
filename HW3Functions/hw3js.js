@@ -47,7 +47,7 @@ function countLetter(str) {
   // 7
 function convertCurrency(value) {
     const usd = '$';
-    const uah = 'UAH';
+    const uah = 'UAH' && 'uah';
     let result;
     if (value.includes(usd)) {
       result = parseInt(value, 10) * 25;
@@ -65,7 +65,7 @@ document.writeln(`
 <table>
   <tr>
     <td>Максимальное число (12643): <p><b>${getBiggerNum(12643)}</b></p></td>
-    <td>Степень числа (2, 4): <p><b>${pow(2, 4)}</b></p></td>
+    <td>Степень числа (2^4): <p><b>${pow(2, 4)}</b></p></td>
     <td>Правильный регистр букв имени 'opTimUS': <p><b>${firstUpperLetter('opTimUS')}</b></p></td>
   </tr>
   <tr>
