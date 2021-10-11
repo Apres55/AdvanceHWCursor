@@ -33,8 +33,7 @@ console.log(getModa(6, 2, 55, 11, 78, 2, 55, 55, 77, 57, 87, 55, 23, 2, 56, 3, 2
 
 function getAverage(...numbers) {
 	const avarage = numbers.filter(number => Number.isInteger(number))
-		.reduce((sum, number) => (sum + number)) / numbers.length;
-			return avarage
+			return avarage.reduce((sum, number) => (sum + number)) / numbers.length;
 }
 
 console.log(getAverage(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
