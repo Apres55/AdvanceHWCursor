@@ -64,9 +64,9 @@ console.log(filterEvenNumbers(1, 2, 3, 4, 5, 6));
 // 6 countPositiveNumbers(...numbers)
 
 function countPositiveNumbers(...numbers) {
-	const result = numbers.filter(number => number > 0)
-	.sort((a, b) => a - b);
-		return result
+	let count = 0;
+	numbers.filter(number => number > 0 ? count += 1 : count += 0)
+		return count
 }
 console.log(countPositiveNumbers(1, -2, 3, -4, -5, 6)); 
 
