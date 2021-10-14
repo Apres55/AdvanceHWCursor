@@ -88,3 +88,5 @@ function calculateWordLetters(test) {
         return acc;
     }, {});
 }
+
+console.log(calculateWordLetters("test"));
