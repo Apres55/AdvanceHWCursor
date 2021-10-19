@@ -38,5 +38,5 @@ const getMySalary = function() {
         return total;
 }
 
-const mySalary = console.log(getMySalary.call(ukraine));
-setInterval(() => mySalary, 10000);
+setInterval(() => console.log(getMySalary.call(ukraine)), 10000);
+
