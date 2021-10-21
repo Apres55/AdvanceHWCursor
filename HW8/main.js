@@ -8,7 +8,7 @@ class Student {
     }
 
     getInfo() {
-        return `Студент ${this.course}ого курсу ${this.university}, ${this.fullName}`;
+        return `Student ${this.course}th course ${this.university}, ${this.fullName}`;
     }
 
     get getMarks() {
@@ -57,7 +57,7 @@ class BudgetStudent extends Student {
     getScholarship() {
         if (!this.study) return "You are dismissed from university";
         if (this.mark !== null && this.getAverageMarks() >= 4) {
-            return `Ви отримали ${this.scholarship} грн степендії`;
+            return `You recived ${this.scholarship} uah from scholarship`;
         } else {
             return "You have a low avarage mark for get the scholarship"
         }
