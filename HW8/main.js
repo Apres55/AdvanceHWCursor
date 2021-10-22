@@ -4,7 +4,7 @@ class Student {
         this.course = course;
         this.fullName = fullName;
         this.marks = marks;
-        this.study = true;
+        this.isStudent = true;
     }
 
     getInfo() {
@@ -12,7 +12,7 @@ class Student {
     }
 
     get getMarks() {
-        return this.marks;
+        return this.isStudent ? this.marks : null;
     }
 
     set setNewMark(mark) {
@@ -26,11 +26,11 @@ class Student {
     }
 
     dismiss() {
-        this.study = false;
+        this.isStudent = false;
     }
 
     recover() {
-        this.study = true;
+        this.isStudent = true;
     }
 }
 
@@ -55,7 +55,7 @@ class BudgetStudent extends Student {
     }
 
     getScholarship() {
-        if (!this.study) return "You are dismissed from university";
+        if (!this.isStudent) return "You are dismissed from university";
         if (this.mark !== null && this.getAverageMarks() >= 4) {
             return `You recived ${this.scholarship} uah from scholarship`;
         } else {

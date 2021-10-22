@@ -31,11 +31,14 @@ console.log(getTotalTaxes.call(latvia))
 
 const getMySalary = function() {
     const randomSalary = Math.round(Math.random() * (2000 - 1500) + 1500);
-    const total = {};
-    total.salary = randomSalary.toFixed(2);
-    total.taxes = parseInt(this.tax * total.salary).toFixed(2);
-    total.profit = parseInt(total.salary - this.tax * total.salary).toFixed(2);
-        return total;
+    const salary = randomSalary.toFixed(2);
+    const taxes = parseInt(this.tax * salary).toFixed(2);
+    const profit = parseInt(salary - this.tax * salary).toFixed(2);
+        return {
+            salary: salary,
+            taxes: taxes,
+            profit: profit
+        }
 }
 
 setInterval(() => console.log(getMySalary.call(ukraine)), 10000);
