@@ -1,17 +1,15 @@
 function generateBlocks() {
-    document.body.insertAdjacentHTML('beforeend', '<div id = "cont">' + '<div id = "coloredDiv"></div>'.repeat(25) + '</div>');
-        generateBlocksInterval()
+    document.body.insertAdjacentHTML('beforeend', '<div id = "cont">' + '<div class = "coloredDiv"></div>'.repeat(25) + '</div>');
+    document.querySelectorAll('.coloredDiv').forEach (el => {
+        el.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8);
+    });
 }
-
-generateBlocks()
-
 
 // advance
 
-function generateBlocksInterval() {
-    setInterval (function () {
-        document.querySelectorAll('#cont > div').forEach (el => {
-            el.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8);
-        });
-    }, 700);
+const generateBlocksInterval = () => {
+    setInterval(() => document.querySelectorAll('.coloredDiv').forEach (el => {
+        el.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8);
+    }), 1000);
 }
+generateBlocksInterval(generateBlocks());

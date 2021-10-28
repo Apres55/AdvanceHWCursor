@@ -3,7 +3,7 @@
   height: 250px;
 }
 
-#coloredDiv {
+.coloredDiv {
   float: left;
   width: 42px;
   height: 42px;
