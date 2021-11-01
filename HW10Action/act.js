@@ -12,8 +12,8 @@ getKey.forEach(key => {
         clickForSound(action.currentTarget.dataset.key);
     });
 
-    key.addEventListener('transitionend', event => {
-        event.currentTarget.classList.remove('playing');
+    key.addEventListener('transitionend', action => {
+        action.currentTarget.classList.remove('playing');
     });
 });
 
