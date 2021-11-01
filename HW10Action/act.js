@@ -3,7 +3,7 @@ function clickForSound(el) {
         if (!sound) return;
     sound.currentTime = 0;
     sound.play();
-    document.querySelector(`.bntNum[data-key='${el}'`).classList.add('playing');
+    document.querySelector(`.key[data-key='${el}'`).classList.add('playing');
 }
 
 const getKey = document.querySelectorAll('.key[data-key]');

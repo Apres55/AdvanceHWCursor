@@ -32,8 +32,9 @@ kbd {
     font-weight: 800;
 }
 
-.key:hover {
+.key:hover, .playing {
     padding: 6px;
     font-size: xx-small;
     border: 0.3rem solid;
 }
+
