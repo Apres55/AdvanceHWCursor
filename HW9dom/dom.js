@@ -3,13 +3,15 @@ function generateBlocks() {
     document.querySelectorAll('.coloredDiv').forEach (el => {
         el.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8);
     });
+    setTimeout(() => {
+        document.body.innerHTML = "";
+    }, 950);
 }
 
 // advance
 
 const generateBlocksInterval = () => {
-    setInterval(() => document.querySelectorAll('.coloredDiv').forEach (el => {
-        el.style.backgroundColor = '#' + Math.random().toString(16).slice(2,8);
-    }), 1000);
+    setInterval(generateBlocks, 1000);
 }
+
 generateBlocksInterval(generateBlocks());
