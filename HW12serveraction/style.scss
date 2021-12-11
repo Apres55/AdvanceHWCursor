@@ -1,0 +1,59 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    text-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+body {
+background-image: url(imgs/original.jpg);
+background-size: 120%;
+background-repeat: no-repeat;
+}
+
+.main {
+    padding: 2em 10em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+#getInfo, button {
+width: 8rem;
+height: 2.5rem;
+border: 0.3rem solid rgba(0, 194, 194, 0.63);
+border-radius: 0.4rem;
+padding: 0.3rem;
+transition: all .3s ease;
+text-align: center;
+color: rgba(255, 255, 255, 0.781);
+background: rgba(0,0,0,0.4);
+text-shadow: 0 0 .5rem black;
+cursor: pointer;
+}
+
+#getInfo {
+    padding: 0.6rem;
+}
+
+#getInfo:hover, button:hover {
+    padding: 0.4rem;
+    font-size: 95%;
+    border: 0.3rem solid;
+    border-radius: 0.8rem;
+}
+
+#charlist, #planetList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+}
+
+h2, #page {
+    color:rgba(0, 194, 194, 0.63);
+    font-size: xx-large;
+}

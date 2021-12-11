@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  text-shadow: 0 0 1rem black;
+}
+
+body {
+  background-image: url(imgs/original.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.main {
+  padding: 2em 10em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+#getInfo, button {
+  width: 8rem;
+  height: 2.5rem;
+  border: 0.3rem solid rgba(0, 194, 194, 0.63);
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.781);
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+  cursor: pointer;
+}
+
+#getInfo {
+  padding: 0.6rem;
+}
+
+#getInfo:hover, button:hover {
+  padding: 0.4rem;
+  font-size: 95%;
+  border: 0.3rem solid;
+  border-radius: 0.8rem;
+}
+
+#charlist, #planetList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2, #page {
+  color: rgba(0, 194, 194, 0.63);
+  font-size: xx-large;
+}

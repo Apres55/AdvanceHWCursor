@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body> 
+    <div class="main">
+      <div class="charactersBox">
+        <btn id="getInfo">Get Info</btn>
+        <div id="charlist"></div>
+      </div>
+      <div class="planetBox">
+        <h2>Page:<span id="page"></span></h2>
+        <button id="previousBtn">Previous Page</button>
+        <button id="nextBtn">Next Page</button>
+        <div class="plasnetPlace">
+          <div id="planetList"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./hw.js"> </script>
+</html>
