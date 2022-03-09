@@ -1,7 +1,4 @@
 body {
-    background-image: url(guit.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     box-sizing: border-box;
 }
 
@@ -12,7 +9,7 @@ body {
     justify-content: space-between;
 }
 
-.key {
+.key, .fontUp, .fontDown {
     width: 15%;
     border: 0.5rem solid rgba(194, 142, 0, 0.705);
     border-radius: 1rem;
