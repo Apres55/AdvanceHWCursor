@@ -1,23 +1,28 @@
-const createIdGenerator = function* () {
-    for(let key = 1;; key++)
-    yield key;
+function* createIdGenerator() {
+    let i = 1
+    while (true) {
+        yield i++;
+    }
 }
 
 const idGenerator = createIdGenerator();
 
-console.log(`first value: ${idGenerator.next().value}`);
-console.log(`second value: ${idGenerator.next().value}`);
-console.log(`third value: ${idGenerator.next().value}`);
+let element = document.getElementById("number");
+document.getElementById("generate").addEventListener("click", () => {
+    element.innerHTML = idGenerator.next().value;
+});
+
+// font size // font size // font size 
 
 const newFontGenerator = function* (size) {
     while (true) {
         let fontSize = yield size;
 
-        if(fontSize === "up") {
+        if(fontSize === "fontUp") {
             size += 2;
         }
 
-        if(fontSize === "down" && size >=2) {
+        if(fontSize === "fontDown" && size >=2) {
             size -= 2;
         }
     }
@@ -25,11 +30,18 @@ const newFontGenerator = function* (size) {
 
 const fontGenerator = newFontGenerator(14);
 
-console.log(`${fontGenerator.next("up").value}`);
-console.log(`${fontGenerator.next("up").value}`);
-console.log(`${fontGenerator.next("up").value}`);
-console.log(`${fontGenerator.next().value}`);
-console.log(`${fontGenerator.next("down").value}`);
-console.log(`${fontGenerator.next("down").value}`);
-console.log(`${fontGenerator.next("down").value}`);
-console.log(`${fontGenerator.next().value}`);
+const upBtn = document.getElementById("fontUp");
+const result = document.getElementById("font");
+const downButton = document.getElementById("fontDown");
+
+upBtn.addEventListener("click", () => {
+    let fontValue = fontGenerator.next().value;
+    fontValue = fontGenerator.next("fontUp").value;
+    result.setAttribute("style", `font-size: ${fontValue}px`);
+});
+
+downButton.addEventListener("click", () => {
+    let fontValue = fontGenerator.next().value;
+    fontValue = fontGenerator.next("fontDown").value;
+    result.setAttribute("style", `font-size: ${fontValue}px`);
+});

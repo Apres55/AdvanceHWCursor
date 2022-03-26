@@ -8,10 +8,10 @@ html(lang="en")
         <link rel="stylesheet" href="styles.css">
     body 
         div.mainCont
-            btn(class='generate')
-                kbd G
-            btn(class='fontUp')
-                kbd U
-            btn(class='fontDown')
-                kbd D
-        script(src="jsfile.js")
+            button(id='generate') Generate
+            button(id='fontUp') Up Font
+            button(id='fontDown') Down Font
+        .secondCont
+            div(id='number') 0
+            div(id='font') text
+        script(src="iterators.js")
