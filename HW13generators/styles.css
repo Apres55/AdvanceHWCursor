@@ -30,7 +30,7 @@ body {
   font-family: sans-serif;
 }
 
-button {
+.btn {
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -50,11 +50,11 @@ button {
       user-select: none;
 }
 
-button:hover {
+.btn:hover {
   background-color: #3e8e41;
 }
 
-button:active {
+.btn:active {
   background-color: #3e8e41;
   -webkit-box-shadow: 0 5px #666;
           box-shadow: 0 5px #666;
