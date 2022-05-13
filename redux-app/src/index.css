@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.post-new {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.post-new input,
+.post-new textarea,
+.post-new button {
+  margin: 5px 0;
+  padding: 12px;
+  border: 1px solid #d2d9e7;
+  border-radius: 5px;
+  resize: none;
+  background-color: #f5f8fd;
+}
+
+.post-new button {
+  background-color: #d2d9e7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.post-new button:hover {
+  background-color: #fff;
+}
+
+.posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+}
+
+.post-item {
+  border: 1px solid #d2d9e7;
+  background-color: #f5f8fd;
+  padding: 10px 15px;
+  margin: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.post-item h4 {
+  color: #424f6a;
+}
+
+.post-item p {
+  color: #424f6a;
+  font-size: 14px;
+}
+
+.sort-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.sort-block span {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.sort-block button {
+  margin-left: 10px;
+  padding: 5px;
+  background-color: #d2d9e7;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #d2d9e7;
+  border-radius: 5px;
+  resize: none;
+}
