@@ -3,15 +3,15 @@ import { useDispatch } from 'react-redux';
 import { addPost } from '../redux/actions';
 
 export default function CreatePost() {
-  const [persone, setPersone] = useState("");
-  const [content, setContent] = useState("");
+  const [title, setTitle] = useState("");
+  const [text, setText] = useState("");
 
   const dispatch = useDispatch();
   const onCreatePost = (event) => {
     event.preventDefault();
-    dispatch(addPost({ persone, content }));
-    setPersone("");
-    setContent("");
+    dispatch(addPost({ title, text }));
+    setTitle("");
+    setText("");
   };
 
   return (
@@ -19,13 +19,13 @@ export default function CreatePost() {
       <input
         type="text"
         placeholder="Title"
-        value={persone}
-        onChange={(e) => setPersone(e.target.value)}
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
         placeholder="Text"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
       />
       <button type="submit" onClick={onCreatePost}>
         Create

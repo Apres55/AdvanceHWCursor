@@ -1,19 +1,16 @@
-import React from 'react';
-import Post from './twiterpost/PostItem';
-import './App.css';
 import PostList from './components/PostList';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 
-const App = () => {
+function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Post></Post>
+        <h3>Add new post:</h3>
         <PostList />
       </div>
     </Provider>
   );
-};
+}
 
 export default App;

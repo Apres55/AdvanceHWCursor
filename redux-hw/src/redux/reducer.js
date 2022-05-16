@@ -1,16 +1,42 @@
 import { ADD_POST, SORT_POST } from './actions';
 import { reverse } from '../components/PostList';
 
+let day = new Date();
+const DATE = `${day.getDate()}/${day.getUTCMonth() + 1}`;
+
 const POSTS = [
     {
-    title: "post title 1",
-    text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+    userData: {
+        title: "Kevin Durant",
+        link: "@notkevinnow",
+        date: DATE,
+    },
+    textHolder: {
+        text:
+        "Lorem ipsum dolor sit amet,"
+        }
     },
     {
-    title: "post title 2",
-    text:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    userData: {
+        title: "Kevin Durant",
+        link: "@notkevinnow",
+        date: DATE,
+    },
+    textHolder: {
+        text:
+        "Lorem ipsumut laboremmodo consequatvelit esse cillum dolore eu fugiat nulla pariatur."
+        }
+    },
+    {
+        userData: {
+            title: "Kevin Durant",
+            link: "@notkevinnow",
+            date: DATE,
+        },
+    textHolder: {
+        text:
+        "Lorem Duis aute irure dolor in reprehenderit in voluptate velitfugiat nulla pariatur."
+        }
     }
 ];
 
