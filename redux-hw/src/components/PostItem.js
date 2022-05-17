@@ -3,12 +3,18 @@ export default function PostItem(props) {
   
     return (
       <div className="post-item">
-        <div>
-          <h4>{userData.title}</h4>
-          {userData.link}
-          {userData.date}
+        <div className="userDiv">
+        <h4>{userData.imgFile}</h4>
+          <div className="userPanel">
+            <span>{userData.title}</span>
+            <span>{userData.link}</span>
+            <span>{userData.date}</span>
+          </div>
         </div>
-        <p>{textHolder.text}</p>
+        <div className="textDiv">
+          <p>{textHolder.text}</p>
+          {textHolder.postImg}
+        </div>
       </div>
     );
   }

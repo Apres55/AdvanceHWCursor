@@ -51,7 +51,7 @@
   background-color: #f5f8fd;
   padding: 10px 15px;
   margin: 20px;
-  width: 260px;
+  max-width: 440px;
   border-radius: 10px;
 }
 
@@ -87,4 +87,44 @@
   border: 1px solid #d2d9e7;
   border-radius: 5px;
   resize: none;
+}
+
+/* post-block */
+.userDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.userPanel {
+  padding: 20px 1px 0 8px;
+  gap: 2px;
+  align-items: flex-start;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.divAvatar {
+  width: 50px;
+  height: 50px;
+  background-image: url(./pict/dur.jpg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  max-block-size: 200px;
+}
+
+.textDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post-picture {
+  background-image: url(./pict/west.jpg);
+  max-width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  border: #424f6a 1px;
 }
