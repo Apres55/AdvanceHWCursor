@@ -5,7 +5,3 @@ export const addPost = (post) => ({
     type: ADD_POST,
     payload: post,
 })
-
-export const sortPosts = () => ({
-    type: SORT_POST,
-})

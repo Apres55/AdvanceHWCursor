@@ -90,19 +90,27 @@
 }
 
 /* post-block */
+h4 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .userDiv {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 8vh;
 }
 
 .userPanel {
-  padding: 20px 1px 0 8px;
+  padding: 5px 1px 0 8px;
   gap: 2px;
   align-items: flex-start;
   font-size: 12px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .divAvatar {
@@ -115,16 +123,16 @@
   max-block-size: 200px;
 }
 
-.textDiv{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.post-picture {
-  background-image: url(./pict/west.jpg);
+.west {
   max-width: 200px;
   height: 300px;
   border-radius: 10px;
   border: #424f6a 1px;
+}
+
+.textDiv {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
