@@ -1,3 +1,26 @@
 .App {
   text-align: center;
 }
+
+.content {
+  margin-top: 15px;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: bisque;
+  padding: 15px 0;
+}
+
+.left-panel {
+  display: flex;
+  justify-content: left;
+  background-color: bisque;
+}
+
+.admin-page {
+  display: grid;
+  grid-template-columns: 150px 1fr
+}
