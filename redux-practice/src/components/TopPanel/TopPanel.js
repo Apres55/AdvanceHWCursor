@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
+import saveWordsAction from "../../redux/actions/save-words-action";
+
 
 class TopPanel extends Component {
     render() {
@@ -12,4 +15,10 @@ class TopPanel extends Component {
     }
 } 
 
-export default TopPanel;
+const mapDispatchToProps = dispatch => {
+    return {
+        saveWordsAction: () => dispatch(saveWordsAction())
+    }
+}
+
+export default connect(null, mapDispatchToProps)(TopPanel);
