@@ -9,7 +9,7 @@ class TopPanel extends Component {
         return(
             <div className="top-panel">
                 <Link to="/">WordsExtractionAdmin</Link>
-                <button>Save</button>
+                <button onClick={this.props.saveWordsAction}>Save</button>
             </div>
         )
     }

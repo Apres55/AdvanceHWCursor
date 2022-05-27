@@ -4,7 +4,6 @@ import LeftPanel from "../LeftPanel/LeftPanel";
 import { connect } from "react-redux";
 import { addTextAction } from "../../redux/actions/add-text-action";
 import exactWordsCollector from "../../redux/actions/text-parse-action";
-import { saveWordsAction } from "../../redux/actions/save-words-action";
 
 class NewPost extends Component{
     render() {
@@ -38,7 +37,6 @@ const mapDispatchToProps = dispatch => {
     return {
         addTextAction: e => dispatch(addTextAction(e)),
         exactWordsCollector: () => dispatch(exactWordsCollector()),
-        saveWordsAction: () => dispatch(saveWordsAction())
     }
 }
 
