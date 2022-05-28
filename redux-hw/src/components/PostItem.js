@@ -5,9 +5,9 @@ export default function PostItem(props) {
     return (
       <div className="post-item">
         <div className="userDiv">
-        <h4>{props.imgFile}</h4>
+          <img className="avatar" src={props.imgFile} alt=''/>
           <div className="userPanel">
-            <span>{props.title}</span>
+            <span>{props.name}</span>
             <span>{props.link}</span>
             <span>{props.date}</span>
           </div>
@@ -15,7 +15,7 @@ export default function PostItem(props) {
         <div className="textDiv">
           <p className="textArea">
             {props.text}
-            <img className='content-image' src={props.image} alt='none'></img>
+            <img className='content-image' src={props.image} alt='' />
           </p>
           <Stats />
         </div>
