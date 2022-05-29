@@ -5,10 +5,12 @@ class TopBar extends Component {
     render() {
         return(
             <div className="top-panel">
-                <Link to="/users">Users</Link>
-                <Link to="/add-user">Add User</Link>
-                <Link to="/posts">Posts List</Link>
-                <Link to="/new-post">Create Post</Link>
+                <ul>
+                    <li><Link to="/">NewUser</Link></li>
+                    <li><Link to="/users">Users</Link></li>
+                    <li><Link to="/newpost">NewPost</Link></li>
+                    <li><Link to="/posts">Posts</Link></li>
+                </ul>
             </div>
         )
     }

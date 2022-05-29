@@ -1,20 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import TopBar from "../bar/TopBar"
 
-class NewUser extends Component {
-    render() {
+function Posts() {
         return(
             <div>
                 <TopBar />
                 <div className="admin-page">
                     <div className="content">
-                        <input type="text" size="40" />
-                        <button className="new-user-btn">ADD</button>
+                        <h1>Posts</h1>
                     </div>
                 </div>
             </div>
         )
-    }
 }
 
-export default NewUser;
+export default Posts;

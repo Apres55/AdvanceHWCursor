@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TopBar from "../bar/TopBar"
 
-class NewUser extends Component {
+class NewPost extends Component {
     render() {
         return(
             <div>
@@ -9,7 +9,7 @@ class NewUser extends Component {
                 <div className="admin-page">
                     <div className="content">
                         <input type="text" size="40" />
-                        <button className="new-user-btn">ADD</button>
+                        <textarea cols='30' rows='10'></textarea>
                     </div>
                 </div>
             </div>
@@ -17,4 +17,4 @@ class NewUser extends Component {
     }
 }
 
-export default NewUser;
+export default NewPost;

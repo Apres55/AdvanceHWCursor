@@ -11,6 +11,26 @@
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.content {
+  margin-top: 15px;
+  height: 650px;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: bisque;
+  padding: 15px 0;
+}
+
+.left-panel {
+  display: flex;
+  justify-content: left;
+  background-color: bisque;
+}
+
+.admin-page {
+  display: grid;
+  grid-template-columns: 150px 1fr
 }
