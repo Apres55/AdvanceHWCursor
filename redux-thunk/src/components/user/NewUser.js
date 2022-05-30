@@ -8,8 +8,21 @@ class NewUser extends Component {
                 <TopBar />
                 <div className="admin-page">
                     <div className="content">
-                        <input type="text" size="40" />
-                        <button className="new-user-btn">ADD</button>
+                        <form className="new-user-form">
+                            <input
+                                type="text"
+                                placeholder="Title"
+                                value='text'
+                            />
+                            <input
+                                type="text"
+                                placeholder="Title"
+                                value='text'
+                            />
+                            <button type="submit">
+                                Create
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

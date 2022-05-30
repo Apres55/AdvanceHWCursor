@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TopBar from "../bar/TopBar"
+import TopBar from "../bar/TopBar";
 
 class NewPost extends Component {
     render() {
@@ -8,8 +8,20 @@ class NewPost extends Component {
                 <TopBar />
                 <div className="admin-page">
                     <div className="content">
-                        <input type="text" size="40" />
-                        <textarea cols='30' rows='10'></textarea>
+                        <form className="new-post-form">
+                            <input
+                                type="text"
+                                placeholder="Title"
+                                value='text'
+                            />
+                            <textarea
+                                placeholder="Text"
+                                value='text'
+                            />
+                            <button type="submit">
+                                Create
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

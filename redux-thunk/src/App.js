@@ -7,7 +7,6 @@ import NewPost from './components/post/NewPost';
 function App() {
   return (
     <div className="App">
-      <h1>dsadasda</h1>
       <Router>
         <Routes>
           <Route path="/" element={ <NewUser /> } />
