@@ -1,20 +1,18 @@
 import React from "react";
 import TopBar from "../bar/TopBar";
 import { useSelector } from "react-redux";
-import PostItem from "./PostItem";
+import PostItem from "./PostItem"; 
 
 function Posts() {
-    const posts = useSelector((state) => state.posts);
+    const posts = useSelector((state) => state.addPostReducer.posts);
         return(
             <div>
                 <TopBar />
                 <div className="admin-page">
                     <div className="content">
-                        <div className="posts-list">
-                        {posts.map((post) => (
-                            <PostItem key={post.name} {...post} />
+                        {posts.map((post, index) => (
+                            <PostItem key={index} {...post} />
                         ))}
-                        </div>
                     </div>
                 </div>
             </div>

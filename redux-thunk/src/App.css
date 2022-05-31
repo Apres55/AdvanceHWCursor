@@ -67,7 +67,7 @@ a:hover {
 }
 
 textarea {
-  background-color: rgb(244, 244, 244);
+  background-color: #f5f8fd;
   color: rgba(0, 0, 0, 0.355);
   border: solid 2px;
   border-color: rgba(0, 0, 0, 0.516);
@@ -76,7 +76,7 @@ textarea {
 }
 
 input {
-  background-color: rgb(244, 244, 244);
+  background-color: #f5f8fd;
   color: rgba(0, 0, 0, 0.355);
   border: solid 2px;
   border-color: rgba(0, 0, 0, 0.516);
@@ -96,4 +96,78 @@ button:hover {
   transform:scale(96%);
   transition-duration: 0.3s;
   background-color: rgba(0, 0, 0, 0.805);
+}
+
+/* post */
+
+.post-item {
+  border: 1px solid #d2d9e7;
+  background-color: #f5f8fd;
+  padding: 10px 15px;
+  margin: 20px;
+  max-width: 440px;
+  border-radius: 10px;
+}
+
+.post-item h4 {
+  color: #424f6a;
+}
+
+.post-item p {
+  color: #424f6a;
+  font-size: 14px;
+}
+
+.userDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  height: 6vh;
+}
+
+.userPanel {
+  padding: 5px 1px 0 8px;
+  gap: 2px;
+  align-items: flex-start;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 200;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  max-block-size: 200px;
+}
+
+.props.image {
+  max-width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  border: #424f6a 1px;
+}
+
+.textDiv {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 10% 20%;
+  font-weight: 800;
+}
+
+/* dropDown */
+.create-post-select {
+  margin: 5px 0;
+  padding: 12px;
+  color: rgba(0, 0, 0, 0.633);
+  border: solid 2px;
+  border-color: rgba(0, 0, 0, 0.516);
+  border-radius: 5px;
+  resize: none;
+  background-color: #f5f8fd;
+  text-align: center;
 }

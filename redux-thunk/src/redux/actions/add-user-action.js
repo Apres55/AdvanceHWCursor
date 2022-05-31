@@ -1,6 +1,8 @@
 import { addActions } from '../types';
 
-export const addPost = (user) => ({
-    type: addActions.ADD_USER,
-    payload: user,
-})
+export const addUser = (user) => {
+        return {
+            type: addActions.ADD_USER,
+            payload: user,
+    }
+}

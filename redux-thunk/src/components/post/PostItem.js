@@ -1,10 +1,19 @@
 export default function PostItem(props) {
-    const { name, text } = props;
   
     return (
       <div className="post-item">
-        <h4>{name}</h4>
-        <p>{text}</p>
+        <div className="userDiv">
+          <img className="avatar" src={props.avatar} alt=''/>
+          <div className="userPanel">
+            <span>{props.name}</span>
+            <span>{props.username}</span>
+          </div>
+        </div>
+        <div className="textDiv">
+          <p className="textArea">
+            {props.text}
+          </p>
+        </div>
       </div>
     );
   }

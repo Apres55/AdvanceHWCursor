@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import addPostReducer from './reducers/addPostReducer';
 import addUserReducer from './reducers/addUserReducer'
 
-export const reducer = combineReducers ({
+const reducer = combineReducers ({
     addPostReducer,
     addUserReducer
 })
