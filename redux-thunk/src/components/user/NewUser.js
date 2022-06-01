@@ -1,9 +1,8 @@
 import React, { Component} from "react";
-import { useDispatch } from 'react-redux';
+import { connect } from "react-redux"; 
 import TopBar from "../bar/TopBar";
 import { addUser } from "../../redux/actions/add-user-action";
-import { USERS } from "../../redux/reducers/addUserReducer";
-
+import exactUsersCollector from "../../redux/actions/add-user-action";
 
 class NewUser extends Component {
     render() {
@@ -14,26 +13,26 @@ class NewUser extends Component {
                 <TopBar />
                 <div className="admin-page">
                     <div className="content">
-                    <form className="new-user-form" onSubmit={onCreateUser}>
+                    <form className="new-user-form">
                             <input
-                                type="text"
-                                placeholder="text"
-                                value={avatar}
+                                type="name"
+                                placeholder="name"
+                                value={this.name}
                                 onChange={(e) => this.props.addUser(e.target.value)}
                             />
                             <input
-                                type="text"
-                                placeholder="text"
-                                value={name}
+                                type="username"
+                                placeholder="username"
+                                value={this.username}
                                 onChange={(e) => this.props.addUser(e.target.value)}
                             />
                             <input
-                                type="text"
+                                type="url"
                                 placeholder="url"
-                                value={username}
+                                value={this.avatar}
                                 onChange={(e) => this.props.addUser(e.target.value)}
                             />
-                            <button type="submit">
+                            <button type="submit" onClick={this.props.exactUsersCollector}>
                                 Create
                             </button>
                         </form>
@@ -44,4 +43,17 @@ class NewUser extends Component {
     }
 }
 
-export default NewUser;
+const getStateToProps = state => {
+    return {
+        users: state.addUserReducer
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        addUser: e => dispatch(addUser(e)),
+        exactUsersCollector: () => dispatch(exactUsersCollector()),
+    }
+}
+
+export default connect(getStateToProps, mapDispatchToProps)(NewUser);

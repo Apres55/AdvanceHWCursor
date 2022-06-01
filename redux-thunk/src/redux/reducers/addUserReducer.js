@@ -9,14 +9,14 @@ export const USERS = [
 ]
 
 const initialState = {
-    users: USERS,
+    users: USERS, 
 };
 
 const addUserReducer = (state = initialState, action) => {
     switch (action.type) {
         case addActions.ADD_USER: 
             return {
-                posts: [action.payload, ...state.users]
+                users: [action.payload, ...state.users]
             }
         default:
             return state;
