@@ -1,6 +1,6 @@
 import React from "react";
-import LeftPanel from "../LeftPanel/LeftPanel"
-import TopPanel from "../TopPanel/TopPanel"
+import LeftPanel from "../LeftPanel/LeftPanel";
+import TopPanel from "../TopPanel/TopPanel" 
 
 function Posts() {
     return(

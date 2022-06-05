@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import CreatePost from "./CreatePost";
 import PostItem from "./PostItem";
-import SortPosts from "./SortPosts";
+import SortPosts from "./SortPosts"; 
 
 export function reverse(array) {
   return array.map((_, idx) => array[array.length - 1 - idx]);

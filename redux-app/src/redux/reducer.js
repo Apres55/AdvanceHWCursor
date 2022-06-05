@@ -1,5 +1,5 @@
 import { ADD_POST, SORT_POST } from './actions';
-import { reverse } from '../components/PostList';
+import { reverse } from '../components/PostList'; 
 
 const POSTS = [
     {

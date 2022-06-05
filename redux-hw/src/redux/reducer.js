@@ -1,6 +1,6 @@
 import { ADD_POST } from './actions';
 import west from '../pict/west.jpg';
-import dur from '../pict/dur.jpg'
+import dur from '../pict/dur.jpg' 
 
 let day = new Date();
 export const DATE = `${day.getDate()}/${day.getUTCMonth() + 1}`;

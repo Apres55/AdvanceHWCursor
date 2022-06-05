@@ -1,4 +1,4 @@
-import { TEXT_PARSER } from '../types'
+import { TEXT_PARSER } from '../types' 
 
 const textParseReduser = (state = [], action) => {
     switch (action.type) {

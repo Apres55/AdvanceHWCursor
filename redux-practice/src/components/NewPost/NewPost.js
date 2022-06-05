@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TopPanel from "../TopPanel/TopPanel";
 import LeftPanel from "../LeftPanel/LeftPanel";
-import { connect } from "react-redux";
+import { connect } from "react-redux"; 
 import { addTextAction } from "../../redux/actions/add-text-action";
 import exactWordsCollector from "../../redux/actions/text-parse-action";
 
@@ -31,7 +31,7 @@ const getStateToProps = state => {
     return {
         text: state.addTextReducer
     }
-}
+} 
 
 const mapDispatchToProps = dispatch => {
     return {

@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import CreatePost from "./CreatePost";
-import PostItem from "./PostItem";
+import PostItem from "./PostItem"; 
 
 export default function PostList() {
   const posts = useSelector((state) => state.posts);

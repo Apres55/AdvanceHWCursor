@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { addPost } from '../redux/actions';
 import { DATE } from "../redux/reducer";
-import kyrie from '../pict/kyr.jpg'
+import kyrie from '../pict/kyr.jpg' 
 
 const AUTHORS = [
   {

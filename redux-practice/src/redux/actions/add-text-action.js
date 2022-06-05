@@ -1,4 +1,4 @@
-import { ADD_TEXT } from "../types";
+import { ADD_TEXT } from "../types"; 
 
 export const addTextAction = (text) => {
     return {

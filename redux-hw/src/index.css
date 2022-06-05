@@ -95,7 +95,7 @@
 .userDiv {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-start; 
   height: 8vh;
 }
 
