@@ -3,13 +3,24 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 5vmin;
   pointer-events: none;
+}
+
+.logo-div {
+  width: 10vmin;
+  height: 10vmin;
+  background-color: rgba(255, 0, 38, 0.479);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -30,9 +41,9 @@
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
