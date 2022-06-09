@@ -47,3 +47,32 @@
     transform: rotateY(360deg);
   }
 }
+
+
+input {
+  background-color: transparent;
+  padding: 10px;
+  border: rgba(255, 255, 255, 0.76) solid 1px;
+  border-radius: 3px;
+}
+
+.sign-in-area, .sign-up-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+button {
+  background-color: rgba(93, 216, 253, 0.756);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.user-info-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}

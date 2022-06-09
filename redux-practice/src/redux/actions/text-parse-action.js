@@ -1,5 +1,5 @@
 import { TEXT_PARSER } from "../types";
-import nlp from 'compromise';  
+import nlp from 'compromise';   
 
 const wordsCollection = (words) => {
     return {

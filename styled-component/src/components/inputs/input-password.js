@@ -1,31 +1,14 @@
-import React, { Component } from "react";
-import { connect } from "react-redux"; 
-import { addPassword } from "../../redux/actions/addPass";
-import exactPasswordCollector from "../../redux/actions/parseInputs";
+import React from "react";
 
-class PasswordInput extends Component {
-    render() {
+const PasswordInput = () => {
         return(
+            <div>   
                 <input type="text"
                     placeholder="Enter password"
-                    value={password}
                     onChange={(e) => this.props.addPassword(e.target.value)}>
                 </input>
+            </div> 
         )
-    } 
 }
 
-const getStateToProps = state => {
-    return {
-        text: state.addPasswordReducer
-    }
-} 
-
-const mapDispatchToProps = dispatch => {
-    return {
-        addPassword: e => dispatch(addPassword(e)),
-        exactPasswordCollector: () => dispatch(exactPasswordCollector()),
-    }
-}
-
-export default connect(getStateToProps, mapDispatchToProps)(PasswordInput);
+export default PasswordInput;

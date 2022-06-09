@@ -1,31 +1,15 @@
-import React, { Component } from "react";
-import { connect } from "react-redux"; 
-import { addEmail } from "../../redux/actions/addEmail";
-import exactMailCollector from "../../redux/actions/parseInputs";
 
-class MailInput extends Component {
-    render() {
+const MailInput = () => {
+
         return(
-                <input type="text"
-                    placeholder="Enter your mail"
-                    value={email}
-                    onChange={(e) => this.props.addEmail(e.target.value)}>
-                </input>
+                <div>
+                    <input type="text"
+                        placeholder="Enter your mail"
+                        onChange={(e) => this.props.addEmail(e.target.value)}>
+                    </input>
+                </div>
         )
-    } 
+    
 }
 
-const getStateToProps = state => {
-    return {
-        text: state.addEmailReducer
-    }
-} 
-
-const mapDispatchToProps = dispatch => {
-    return {
-        addEmail: e => dispatch(addEmail(e)),
-        exactMailCollector: () => dispatch(exactMailCollector()),
-    }
-}
-
-export default connect(getStateToProps, mapDispatchToProps)(MailInput);
+export default (MailInput);
