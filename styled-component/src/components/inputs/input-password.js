@@ -2,9 +2,9 @@ import React from "react";
 
 const PasswordInput = () => {
         return(
-            <div>   
-                <input type="text"
-                    placeholder="Enter password"
+            <div className="input-place">   
+                <input className="input-place" type="text"
+                    placeholder="Enter password *"
                     onChange={(e) => this.props.addPassword(e.target.value)}>
                 </input>
             </div> 

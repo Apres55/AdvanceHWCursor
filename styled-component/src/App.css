@@ -54,6 +54,7 @@ input {
   padding: 10px;
   border: rgba(255, 255, 255, 0.76) solid 1px;
   border-radius: 3px;
+  color:rgba(255, 255, 255, 0.76)
 }
 
 .sign-in-area, .sign-up-area {
@@ -68,6 +69,7 @@ button {
   padding: 10px;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .user-info-inputs {
@@ -75,4 +77,31 @@ button {
   flex-direction: row;
   justify-content: space-between;
   gap: 15px;
+}
+
+.check-box-input {
+  display: flex;
+  justify-content: flex-start;
+  color: antiquewhite;
+  font-size: small;
+}
+
+.login-inputs-div {
+  width: 272px;
+}
+
+.input-place {
+  width: 250px;
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a{
+  font-size: x-small;
+  text-decoration: none;
+  color: rgba(93, 216, 253, 0.756) !important;
 }

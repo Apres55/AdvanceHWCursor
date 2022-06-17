@@ -3,8 +3,8 @@ const MailInput = () => {
 
         return(
                 <div>
-                    <input type="text"
-                        placeholder="Enter your mail"
+                    <input className="input-place" type="text"
+                        placeholder="Enter your email *"
                         onChange={(e) => this.props.addEmail(e.target.value)}>
                     </input>
                 </div>
