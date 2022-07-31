@@ -19,7 +19,7 @@ class SignInArea extends Component{
                         <MailInput />
                         <PasswordInput />
                         <label className="check-box-input"><input type="checkbox" id="one" onchange="fun1()" />Remember me</label>
-                        <button className="parse-in" onClick={exactInputsCollector}>SIGN IN</button>
+                        <button className="parse-in" onClick={this.props.mapDispatchToProps}>SIGN IN</button>
                         <Links />
                         <CopyrightFoot />
                     </div>

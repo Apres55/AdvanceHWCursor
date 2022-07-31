@@ -1,31 +1,23 @@
 import { addActions } from "../types";
 import nlp from 'compromise';   
 
-const inputEmail = (email) => {
+const infoCollection = (words) => {
     return {
-        type: addActions.EMAIL_PARSER,
-        payload: email,
+        type: addActions.INFO_PARSER,
+        payload: words
     }
 }
 
-const inputPassword = (password) => {
-    return {
-        type: addActions.PASSWORD_PARSER,
-        payload: password,
-    }
-}
-
-const inputCollector = ({
-    inputEmail,
-    inputPassword
-})
-
-export default function exactInputsCollector () {
+export default function exactInfoCollector () {
     return (dispatch, getState) => {
-        const email = getState().addEmailReducer
-        const mail = nlp(email)
-        const password = getState().addPasswordReducer
-        const pass = nlp(password)
-        dispatch(inputCollector(mail.json(0).terms, pass.json(0).terms))
+        const name = getState().addNameReducer;
+        const docName = nlp(name);
+        const lastName = getState().addlastNameReducer;
+        const doclastName = nlp(lastName);
+        const email = getState().addEmailReducer;
+        const docEmail = nlp(email);
+        const password = getState().addPasswordReducer;
+        const docPass = nlp(password);
+        dispatch(infoCollection(docName.json(0).terms, doclastName.json(0).terms, docEmail.json(0).terms, docPass.json(0).terms))
     }
 }

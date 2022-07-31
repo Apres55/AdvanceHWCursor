@@ -5,6 +5,7 @@ import addEmailReducer from './reducers/addEmailReducer';
 import addLastNameReducer from './reducers/addLastNameReducer';
 import addPasswordReducer from './reducers/addPasswordReducer';
 import addNameReducer from './reducers/addNameReducer';
+import infoParserReducer from './reducers/parserReducer'
 
 
 const reducer = combineReducers ({
@@ -12,6 +13,7 @@ const reducer = combineReducers ({
     addLastNameReducer,
     addEmailReducer,
     addPasswordReducer,
+    infoParserReducer
 })
 
 const store = createStore (

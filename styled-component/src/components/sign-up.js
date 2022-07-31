@@ -7,7 +7,13 @@ import PasswordInput from "./inputs/input-password";
 import UserInfoInput from "./inputs/input-user-info";
 import Logo from "./images/logo-component";
 import LinksUp from "./sign-up-links";
-import CopyrightFoot from "./copyright-footer"
+import CopyrightFoot from "./copyright-footer";
+import {addName} from "../redux/actions/addName";
+import {addLastName} from "../redux/actions/addLastName";
+import {addPassword} from "../redux/actions/addPass";
+import {addEmail} from "../redux/actions/addEmail";
+import { connect } from "react-redux";
+import exactInfoCollector from "../redux/actions/parseInputs";
 
 class SignUpArea extends Component{
     render() {
@@ -22,7 +28,7 @@ class SignUpArea extends Component{
                         <MailInput />
                         <PasswordInput />
                         <label className="check-box-input"><input type="checkbox" id="one" onchange="fun1()" />I want to receive inspiration, marketing promotions and updates via email</label>
-                        <button>SIGN UP</button>
+                        <button className="sign-up-btn" onClick={this.props.mapDispatchToProps}>SIGN UP</button>
                         <LinksUp />
                         <CopyrightFoot />
                     </div>
@@ -31,4 +37,21 @@ class SignUpArea extends Component{
         }
 }
 
-export default SignUpArea;
+const getStateToProps = state => {
+    return {
+        text: state.combineReducers,
+        words: state.infoParserReducer
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        addName: e => dispatch(addName(e)),
+        addLastName: e => dispatch(addLastName(e)),
+        addPassword: e => dispatch(addPassword(e)),
+        addEmail: e => dispatch(addEmail(e)),
+        exactInfoCollector: () => dispatch(exactInfoCollector())
+    }
+}
+
+export default connect(getStateToProps, mapDispatchToProps)(SignUpArea);
