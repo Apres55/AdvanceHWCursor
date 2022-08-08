@@ -1,15 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { connect } from 'react-redux';
 
-class LinksUp extends Component {
-    render() {
+const LinksUp = () => {
         return(
             <div className="links-div-up">
                 <Link to="/">Already have account? Sign In</Link>
             </div>
         )
     }
-}
 
-export default (LinksUp);
+export default LinksUp;

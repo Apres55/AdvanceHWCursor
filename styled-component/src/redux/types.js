@@ -1,8 +1,0 @@
-export const addActions = {
-    ADD_NAME: "ADD_NAME",
-    ADD_LAST_NAME: "ADD_LAST_NAME",
-    ADD_PASSWORD: "ADD_PASSWORD",
-    ADD_EMAIL: "ADD_EMAIL",
-    INFO_PARSER: "INFO_PARSER",
-    SAVE_WORDS: "SAVE_WORDS"
-}

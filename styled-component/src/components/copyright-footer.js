@@ -9,4 +9,4 @@ const CopyrightFoot = () => {
 
 }
 
-export default (CopyrightFoot);
+export default CopyrightFoot;

@@ -74,6 +74,7 @@ button {
   cursor: pointer;
   font-size: x-small;
   font-weight: bolder;
+  width: 100%;
 }
 
 .user-info-inputs {
@@ -81,6 +82,11 @@ button {
   grid-template-columns: 47% 47%;
   justify-content: space-between;
   gap: 10px;
+  
+}
+
+.xd {
+  margin-bottom: 0px;
 }
 
 .check-box-input {
@@ -98,6 +104,10 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+input {
+  margin-bottom: 8px;
 }
 
 .input-place {
@@ -125,3 +135,4 @@ a{
 .links-div-up {
   text-align: end;
 }
+

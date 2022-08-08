@@ -4,6 +4,7 @@ import LeftPanel from "../LeftPanel/LeftPanel";
 import { connect } from "react-redux"; 
 import { addTextAction } from "../../redux/actions/add-text-action";
 import exactWordsCollector from "../../redux/actions/text-parse-action";
+import WordsList from "./WordsList";
 
 class NewPost extends Component{
     render() {
@@ -20,6 +21,7 @@ class NewPost extends Component{
                         >
                         </textarea>
                         <button className="parse-in" onClick={this.props.exactWordsCollector}>Parse!</button>
+                        <WordsList wordsList = {this.props.words}/>
                     </div>
                 </div>
             </div>
@@ -29,7 +31,8 @@ class NewPost extends Component{
 
 const getStateToProps = state => {
     return {
-        text: state.addTextReducer
+        text: state.addTextReducer,
+        words: state.textParserReducer
     }
 } 
 
